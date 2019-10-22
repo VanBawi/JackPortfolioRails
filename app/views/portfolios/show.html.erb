@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
+  <%= image_tag @portfolio_item.main_image %>
+</p>
+
+<h1>
   <strong>Title:</strong>
   <%= @portfolio_item.title %>
-</p>
+</h1>
 <p>
   <strong>SubTitle:</strong>
   <%= @portfolio_item.subtitle %>
@@ -12,10 +17,7 @@
   <strong>Body:</strong>
   <%= @portfolio_item.body %>
 </p>
-<p>
-  <strong>Image:</strong>
-  <%= @portfolio_item.thumb_image %>
-</p>
+
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %> |
 <%= link_to 'Back', portfolios_path %>
