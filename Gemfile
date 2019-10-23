@@ -8,7 +8,7 @@ ruby '2.6.3'
 gem 'devise'
 # gem 'administrate'
 
-
+gem 'friendly_id', '~> 5.2.4'
 
 
 
