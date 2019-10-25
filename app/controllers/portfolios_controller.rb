@@ -2,9 +2,13 @@ class PortfoliosController < ApplicationController
     # before_action :set_portfolio_item, only: [:show, :edit, :update, :destroy]
 
     def index
-        @portfolio_items = Portfolio.all
+      @portfolio_items = Portfolio.all
+        # @portfolio_items = Portfolio.ruby_on_rails_portfolio_items
     end
 
+    def angular
+      @angular_items = Portfolio.angular
+    end
 
     def new
         @portfolio_item = Portfolio.new
@@ -49,6 +53,7 @@ class PortfoliosController < ApplicationController
         @portfolio_item = Portfolio.find(params[:id])
 
         @portfolio_item.destroy
+        
         respond_to do |format|
           format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully destroyed.' }
           format.json { head :no_content }
