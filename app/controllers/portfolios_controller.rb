@@ -2,12 +2,12 @@ class PortfoliosController < ApplicationController
     # before_action :set_portfolio_item, only: [:show, :edit, :update, :destroy]
 
     def index
-      @portfolio_items = Portfolio.all
+      @portfolio_items = Portfolio.all.order(created_at: :desc)
         # @portfolio_items = Portfolio.ruby_on_rails_portfolio_items
     end
 
     def angular
-      @angular_items = Portfolio.angular
+      @angular_item = Portfolio.angular
     end
 
     def new
