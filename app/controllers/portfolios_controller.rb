@@ -2,16 +2,21 @@ class PortfoliosController < ApplicationController
     # before_action :set_portfolio_item, only: [:show, :edit, :update, :destroy]
 
     def index
-        @portfolio_items = Portfolio.all
+      @portfolio_items = Portfolio.all.order(created_at: :desc)
+        # @portfolio_items = Portfolio.ruby_on_rails_portfolio_items
     end
 
+    def angular
+      @angular_item = Portfolio.angular
+    end
 
     def new
         @portfolio_item = Portfolio.new
+        3.times { @portfolio_item.technologies.build}
     end
 
     def create
-        @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+        @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
         respond_to do |format|
             if @portfolio_item.save
               format.html { redirect_to @portfolio_item, notice: 'portfolio_item was successfully created.' }
@@ -49,6 +54,7 @@ class PortfoliosController < ApplicationController
         @portfolio_item = Portfolio.find(params[:id])
 
         @portfolio_item.destroy
+        
         respond_to do |format|
           format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully destroyed.' }
           format.json { head :no_content }
