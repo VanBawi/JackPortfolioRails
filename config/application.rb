@@ -30,6 +30,7 @@ module JackPortfolio
     # the framework and any gems in your application.
 
     # Don't generate system test files.
+    config.action_controller.permit_all_parameters = true
     config.generators.system_tests = nil
   end
 end
