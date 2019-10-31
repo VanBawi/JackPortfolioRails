@@ -16,7 +16,7 @@ class PortfoliosController < ApplicationController
     end
 
     def create
-        @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+        @portfolio_item = Portfolio.new(portfolio_params)
         respond_to do |format|
             if @portfolio_item.save
               format.html { redirect_to @portfolio_item, notice: 'portfolio_item was successfully created.' }
@@ -60,9 +60,15 @@ class PortfoliosController < ApplicationController
           format.json { head :no_content }
         end
       end
+
+
+
     private
     # Use callbacks to share common setup or constraints between actions.
-    def set_portfolio_item
-      @portfolio_item = Portfolio.find(params[:id])
+    def portfolio_params
+      params.require(:portfolio).permit(:title, 
+                                        :subtitle, 
+                                        :body,
+                                        technologies_attributes: [:name])
     end
 end
