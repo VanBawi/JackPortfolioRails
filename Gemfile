@@ -10,6 +10,7 @@ gem 'devise'
 
 gem 'friendly_id', '~> 5.2.4'
 gem 'pry-byebug'
+gem 'bootstrap', '~> 4.3.1'
 
 
 
@@ -54,3 +55,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'jack_view_tool', git: 'https://github.com/VanBawi/jack_view_tool_ruby_gem'
