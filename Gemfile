@@ -57,3 +57,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jack_view_tool', git: 'https://github.com/VanBawi/jack_view_tool_ruby_gem'
+
+
+gem 'petergate', '~> 2.0', '>= 2.0.1'
+
+
