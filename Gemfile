@@ -7,7 +7,7 @@ ruby '2.6.3'
 
 gem 'devise'
 # gem 'administrate'
-
+gem "loofah", ">= 2.3.1"
 gem 'friendly_id', '~> 5.2.4'
 gem 'pry-byebug'
 gem 'bootstrap', '~> 4.3.1'
