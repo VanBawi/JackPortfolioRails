@@ -12,14 +12,7 @@
 
   <body>
     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/nav", location: 'top' %>
-
-
-    <%= login_helper %>
-
- 
+    <p class="alert"><%= alert %></p> 
     <%= yield %>
 
     <%= source_helper("portfolio") %>
