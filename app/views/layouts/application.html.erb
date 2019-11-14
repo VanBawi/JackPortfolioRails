@@ -19,9 +19,10 @@
    <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
-
           <%= render "shared/application_nav"%>
+          <div class="container">
           <%= yield %>
+          </div>
           <%= render "shared/footer"%>
           <%= source_helper("application") %>
         </div>
