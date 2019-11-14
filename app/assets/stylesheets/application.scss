@@ -162,20 +162,37 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 55rem;
   }
 }
 
 /*
 *
 */
+.card{ 
+  padding: 20px;
+}
+
+
 
 .card-block {
   color: black;
   text-align: left;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 
 .auth-links a{
   color: black;
+}
+
+.register-text{
+  text-align: right;
+}
+
+
+
+.login-page {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }
