@@ -6,7 +6,7 @@
     
     <title><%= @page_title %> </title>
     <%= csrf_meta_tags %>
-    <%# <%= csp_meta_tag %>
+    <%= csp_meta_tag %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -20,9 +20,9 @@
     <div class="site-wrapper-inner">
       <div class="cover-container">
           <%= render "shared/application_nav"%>
-          <div class="container">
+       
           <%= yield %>
-          </div>
+         
           <%= render "shared/footer"%>
           <%= source_helper("application") %>
         </div>

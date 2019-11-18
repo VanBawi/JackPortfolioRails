@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JackPortfolio <%= @page_title %> </title>
+    <title><%= @page_title %> </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,12 +12,14 @@
 
   <body>
     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> 
-    <%= render "shared/application_nav"%>
-    <div class="container">
-    <%= yield %>
-    </div>
+    <p class="alert"><%= alert %></p>
 
-    <%= source_helper("portfolio") %>
+    <%= render "shared/nav", location: 'top' %>
+
+    <%= login_helper %>
+
+    <%= yield %>
+
+    <%= source_helper("application") %>
   </body>
 </html>
