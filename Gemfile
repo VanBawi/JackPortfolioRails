@@ -11,7 +11,8 @@ gem "loofah", ">= 2.3.1"
 gem 'friendly_id', '~> 5.2.4'
 gem 'pry-byebug'
 gem 'bootstrap', '~> 4.3.1'
-
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 
 
 gem 'rails', '~> 6.0.0.rc2'

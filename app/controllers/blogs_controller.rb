@@ -9,7 +9,7 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     # byebugPuser.
-    @blogs = Blog.special_blogs
+    @blogs = Blog.page(params[:page]).per(5)
     # @blogs = Blog.featured_blogs
     @page_title = "My Portfolio blog."
   end
