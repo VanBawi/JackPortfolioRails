@@ -31,7 +31,7 @@ puts "5 skills  created"
         subtitle: "Ruby On Rails",
         body: "So why, oh why, does almost every marketer I talk to have a laundry list of excuses for why they can't consistently blog?
         Maybe because, unless you're one of the few people who actually like writing, business blogging kind of stinks. You have to find words, string them together into sentences ... ugh, where do you even start?",
-        main_image: "https://placehold.it/600x400",
+        main_image: "https://placehold.it/500x400",
         thumb_image: "https://placehold.it/356x280"
     )
 end
@@ -45,7 +45,7 @@ puts "8 Portfolio posts created"
         subtitle: "Angular",
         body: "So why, oh why, does almost every marketer I talk to have a laundry list of excuses for why they can't consistently blog?
         Maybe because, unless you're one of the few people who actually like writing, business blogging kind of stinks. You have to find words, string them together into sentences ... ugh, where do you even start?",
-        main_image: "https://placehold.it/600x400",
+        main_image: "https://placehold.it/500x400",
         thumb_image: "https://placehold.it/356x280"
     )
 end
