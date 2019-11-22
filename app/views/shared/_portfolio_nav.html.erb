@@ -1,0 +1,40 @@
+<div class="blog-masthead">
+      <div class="container nav-right">
+        <nav class="nav blog-nav button">
+            <%= link_to "Home", root_path, class: 'nav-link btn-color' %>
+            <%= link_to "About", about_me_path, class: 'nav-link btn-color' %>
+            <%= link_to "Contact", contact_path, class: 'nav-link btn-color' %>
+            <%= link_to "Blog", blogs_path, class: 'nav-link btn-color' %>
+            <%= link_to "Portfolio", portfolios_path, class: 'nav-link btn-color' %>
+            <%= login_helper 'nav-link btn-color' %>
+        </nav>
+      </div>
+    </div>
+
+<style>
+.nav-right{
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.button {
+    color: white;
+    font-weight: bold;
+    border-bottom-color: #fff;
+    
+    
+}
+.btn-color:hover{
+    /* margin-right: 3px; */
+    border-radius: 3px;
+    background-color: #296e84;
+    padding-bottom: -3px solid #fff;
+    cursor: pointer;
+}
+
+.button .btn-color:hover,
+.button .btn-color:focus{
+    border-bottom-color: #fff;
+}
+
+</style>
