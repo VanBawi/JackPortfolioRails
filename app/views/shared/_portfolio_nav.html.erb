@@ -1,11 +1,7 @@
 <div class="blog-masthead">
       <div class="container nav-right">
         <nav class="nav blog-nav button">
-            <%= link_to "Home", root_path, class: 'nav-link btn-color' %>
-            <%= link_to "About", about_me_path, class: 'nav-link btn-color' %>
-            <%= link_to "Contact", contact_path, class: 'nav-link btn-color' %>
-            <%= link_to "Blog", blogs_path, class: 'nav-link btn-color' %>
-            <%= link_to "Portfolio", portfolios_path, class: 'nav-link btn-color' %>
+            <%= render "shared/shared_nav_main"%>
             <%= login_helper 'nav-link btn-color' %>
         </nav>
       </div>
