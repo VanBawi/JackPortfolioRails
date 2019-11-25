@@ -23,4 +23,10 @@ module ApplicationHelper
     def copyright_generator
         JackViewTool::Renderer.copyright 'Jack First', 'All rights reserved.'
     end
+
+#     def nav_helper style, tag_type
+# nav_links = <<NAV
+# <#{tag_type}><a href="#{root_path}" class="#{style}"> Home</a></#{tag_type}>
+
+#     end
 end
