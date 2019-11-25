@@ -7,13 +7,17 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require jquery_ujs
+//= require jquery-ui
+//= require html.sortable
+//= require_tree .
+//= require jquery-ui
 
 
-
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
+// require("@rails/ujs").start()
+// require("turbolinks").start()
+// require("@rails/activestorage").start()
+// require("channels")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

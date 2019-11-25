@@ -1,10 +1,12 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-
+@import "jquery-ui";
 /*
  *= require font-awesome
  */
-
+/*
+ *= require jquery-ui
+ */
 /*
  * Globals
  */
