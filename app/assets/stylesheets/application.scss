@@ -1,6 +1,6 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-@import "jquery-ui";
+@import "portfolios";
 /*
  *= require font-awesome
  */
@@ -212,3 +212,7 @@ body {
 
 
 
+.jack{
+  padding: 50px;
+  margin: 50px;
+}
