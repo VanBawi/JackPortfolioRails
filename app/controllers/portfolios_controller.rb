@@ -4,8 +4,16 @@ class PortfoliosController < ApplicationController
     layout "portfolio"
 
     def index
-      @portfolio_items = Portfolio.by_position
+      @portfolio_items = Portfolio.order(:position)
         # @portfolio_items = Portfolio.ruby_on_rails_portfolio_items
+    end
+
+    def sort
+      params[:portfolio].each_with_index do |id, index|
+        Portfolio.where(id: id).update_all(position: index + 1)
+      end
+
+      head :ok
     end
 
     def angular
