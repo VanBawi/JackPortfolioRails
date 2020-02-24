@@ -14,15 +14,22 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("jquery")
-
+require("packs/portfolios")
+require('packs/html.sortable')
+window.$ = window.jQuery = require('packs/portfolios')
+window.jQuery = $;
+window.$ = $;
 
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //= require rails-ujs
 //= require jquery
+//= require jquery_ujs
+//= require jquery-ui
 //= require jquery-ui/widget
 //= require jquery-ui/sortable
 //= require bootstrap-sprockets
+//= require html.sortable
 //= require tether
 //= require turbolinks
 //= require_tree .
