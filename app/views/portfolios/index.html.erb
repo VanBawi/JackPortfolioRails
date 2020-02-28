@@ -1,11 +1,8 @@
 <div class="album text-muted jack">
   <div class="container">
-
      <%= link_to 'Create New Post', new_portfolio_path(@portfolio_item), class:'btn btn-primary' %>
     <div id="portfolios" class="row sortable" data-url="<%= sort_portfolios_path %>">
-      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
   </div>
 </div>
-
-
