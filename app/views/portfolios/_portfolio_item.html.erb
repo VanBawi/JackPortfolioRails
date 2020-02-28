@@ -1,6 +1,9 @@
 <% if logged_in?(:site_admin) %>
-  <div id="portfolios" class="card">
-    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
+  <div class="card">
+  <% if portfolio_item.thumb_image? %>
+    <%= image_tag portfolio_item.thumb_image.url unless portfolio_item.thumb_image.nil? %>
+      <%# <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
+    <%end %>
     <p class="card-text">
      <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> 
       <%= portfolio_item.subtitle %>
@@ -10,8 +13,9 @@
        <%= link_to 'Destroy', portfolio_item, method: :delete,  data: { confirm: 'Are you sure?' }%>
      </div>
      </p>
+   
   </div>
-    
+ 
 <% end %>
 
   

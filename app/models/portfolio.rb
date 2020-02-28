@@ -23,7 +23,7 @@ class Portfolio < ApplicationRecord
 
 
 
-    acts_as_list scope: :circuit
+    # acts_as_list scope: :circuit
     default_scope { order(position: :asc) }
 
 
