@@ -20,5 +20,16 @@ class Portfolio < ApplicationRecord
     def self.by_position
         order("position ASC")
     end
+
+
+
+    acts_as_list scope: :circuit
+    default_scope { order(position: :asc) }
+
+
+
+
+
+
 end
  

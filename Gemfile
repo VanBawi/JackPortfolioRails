@@ -69,4 +69,8 @@ gem 'carrierwave', '~> 2.0', '>= 2.0.2'
 gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 gem 'carrierwave-aws', '~> 1.4'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'coffee-rails', '~> 5.0'
+gem 'coffee-script', '~> 2.4', '>= 2.4.1'
+gem 'html5sortable-rails'
+gem 'cocoon', '~> 1.2', '>= 1.2.14'
 

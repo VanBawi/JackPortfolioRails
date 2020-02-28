@@ -42,17 +42,24 @@
 
   <hr>
   <div class="col-md-12">
-      <h2>Technologies Used:</h2>
-      <div >
+      <h2>Techs Used:</h2>
+      <div>
         <%= form.fields_for :technologies do |technology_form|%>
-        <div class="form-group">
-        <%= technology_form.label :name %>
-        <%= technology_form.text_field :name, class: 'form-control', rows: 15 %>
+           <%= render 'technology_fields', f: technology_form %>
+        <% end %> 
+        <div>
+          <%= link_to_add_association 'Add Tech', form, :technologies %>
         </div>
-        <% end %>
-      </div>
+    </div>
+
       <div class="form-group">
         <%= form.submit 'Save Portfolio Item', class:'btn btn-primary btn-block' %>
       </div>
     <% end %>
+
+    <%# <% if logged_in?(:site_admin) %>
+      <%# <div class="">
+        <%= link_to 'Edit Item', edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+      <%# </div>
+      <% end %>
   </div>

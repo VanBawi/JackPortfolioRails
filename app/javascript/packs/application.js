@@ -7,16 +7,21 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file. JavaScript code in this file should be added after the last require_* statement.
 //
-
+// import {} from 'jquery-ujs';
 
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
 require("packs/portfolios")
 require('packs/html.sortable')
-window.$ = window.jQuery = require('packs/portfolios')
+require("jquery")
+require("jquery-ui")
+require("jquery-ui/ui/widgets/sortable")
+$(function(){
+  $('.sortable').sortable();
+});
+
 window.jQuery = $;
 window.$ = $;
 
@@ -30,6 +35,9 @@ window.$ = $;
 //= require jquery-ui/sortable
 //= require bootstrap-sprockets
 //= require html.sortable
+//= require jquery-ui/widgets/draggable
+//= require jquery-ui/widgets/sortable
+//= require cocoon
 //= require tether
 //= require turbolinks
 //= require_tree .
