@@ -1,14 +1,3 @@
-// alert("hey there! i am portfolio.js");
-
-document.addEventListener('turbolinks:load', function(){
-
-    $("#portfolios").sortable();
-   
-});
-
-
-// alert("hey there");
-
 
 ;(function(root, factory) {
     if (typeof define === 'function' && define.amd) {
