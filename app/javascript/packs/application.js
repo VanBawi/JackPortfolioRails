@@ -18,6 +18,7 @@ require('packs/html.sortable')
 require("jquery")
 require("jquery-ui")
 require("jquery-ui/ui/widgets/sortable")
+require("packs/cable")
 $(function(){
   $('.sortable').sortable();
 });
@@ -40,6 +41,7 @@ window.$ = $;
 //= require cocoon
 //= require gritter
 //= require tether
+//= require cable
 //= require turbolinks
 //= require_tree .
 
