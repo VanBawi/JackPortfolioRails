@@ -25,36 +25,36 @@ puts "10 blog posts created"
 end
 puts "5 skills  created"
 
-8.times do |portfolio_item|
-    Portfolio.create!(
-        title: "Portfolio title: #{portfolio_item}",
-        subtitle: "Ruby On Rails",
-        body: "So why, oh why, does almost every marketer I talk to have a laundry list of excuses for why they can't consistently blog?
-        Maybe because, unless you're one of the few people who actually like writing, business blogging kind of stinks. You have to find words, string them together into sentences ... ugh, where do you even start?",
-        main_image: "https://placehold.it/500x400",
-        thumb_image: "https://placehold.it/356x280"
-    )
-end
+# 8.times do |portfolio_item|
+#     Portfolio.create!(
+#         title: "Portfolio title: #{portfolio_item}",
+#         subtitle: "Ruby On Rails",
+#         body: "So why, oh why, does almost every marketer I talk to have a laundry list of excuses for why they can't consistently blog?
+#         Maybe because, unless you're one of the few people who actually like writing, business blogging kind of stinks. You have to find words, string them together into sentences ... ugh, where do you even start?",
+#         main_image: "https://placehold.it/500x400",
+#         thumb_image: "https://placehold.it/356x280"
+#     )
+# end
 
 
-puts "8 Portfolio posts created"
+# puts "8 Portfolio posts created"
 
-1.times do |portfolio_item|
-    Portfolio.create!(
-        title: "Portfolio title: #{portfolio_item}",
-        subtitle: "Angular",
-        body: "So why, oh why, does almost every marketer I talk to have a laundry list of excuses for why they can't consistently blog?
-        Maybe because, unless you're one of the few people who actually like writing, business blogging kind of stinks. You have to find words, string them together into sentences ... ugh, where do you even start?",
-        main_image: "https://placehold.it/500x400",
-        thumb_image: "https://placehold.it/356x280"
-    )
-end
-puts "1 Angular item created"
+# 1.times do |portfolio_item|
+#     Portfolio.create!(
+#         title: "Portfolio title: #{portfolio_item}",
+#         subtitle: "Angular",
+#         body: "So why, oh why, does almost every marketer I talk to have a laundry list of excuses for why they can't consistently blog?
+#         Maybe because, unless you're one of the few people who actually like writing, business blogging kind of stinks. You have to find words, string them together into sentences ... ugh, where do you even start?",
+#         main_image: "https://placehold.it/500x400",
+#         thumb_image: "https://placehold.it/356x280"
+#     )
+# end
+# puts "1 Angular item created"
 
-3.times do |technology|
-    Portfolio.last.technologies.create!(
-        name: "Technology #{technology}",
-    )
-end
+# 3.times do |technology|
+#     Portfolio.last.technologies.create!(
+#         name: "Technology #{technology}",
+#     )
+# end
 
-puts "3 Technologies items created"
+# puts "3 Technologies items created"

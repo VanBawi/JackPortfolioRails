@@ -1,16 +1,24 @@
-<% if logged_in?(:site_admin) %>
-  <div class="card">
-    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
-    <p class="card-text">
-      <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> 
-      <%= portfolio_item.subtitle %>
-    </p>
-    <div class="row">
-      &nbsp;&nbsp;&nbsp;<%= link_to 'Edit', edit_portfolio_path(portfolio_item) %> &nbsp; / &nbsp;
-      <%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' }%>
-    </div>
-  </div>
-    
-<% end %>
 
-  
+  <div class="card thumb_image_size">
+
+    <% if portfolio_item.thumb_image? %>
+      <%= image_tag portfolio_item.thumb_image.url, width: '100%'  unless portfolio_item.thumb_image.nil?%> 
+    <%end %>
+ 
+    <p class="card-text">
+     <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> 
+      <%= portfolio_item.subtitle %>
+ 
+     <div class="row">
+
+      <% if logged_in?(:site_admin) %>  
+       &nbsp;&nbsp;&nbsp;<%= link_to 'Edit', edit_portfolio_path(portfolio_item) %> &nbsp; / &nbsp;
+       <%= link_to 'Destroy', portfolio_item, method: :delete,  data: { confirm: 'Are you sure?' }%>
+      <% end %>
+     </div>
+     </p>
+   
+  </div>
+
+
+  <%# <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>

@@ -1,11 +1,13 @@
 <div class="album text-muted jack">
   <div class="container">
-
      <%= link_to 'Create New Post', new_portfolio_path(@portfolio_item), class:'btn btn-primary' %>
     <div id="portfolios" class="row sortable" data-url="<%= sort_portfolios_path %>">
+    <div class="thumb_image_size">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </div>
     </div>
   </div>
 </div>
 
 
+  <%= javascript_pack_tag 'portfolios' %>

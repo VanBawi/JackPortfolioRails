@@ -7,18 +7,6 @@ ruby '2.6.3'
 
 gem 'devise'
 # gem 'administrate'
-gem "loofah", ">= 2.3.1"
-gem 'friendly_id', '~> 5.2.4'
-gem 'pry-byebug'
-gem 'bootstrap', '~> 4.3.1'
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
-gem 'kaminari', '~> 1.1', '>= 1.1.1'
-gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-gem 'acts_as_list'
-gem 'carrierwave', '~> 2.0', '>= 2.0.2'
-gem 'mini_magick', '~> 4.9', '>= 4.9.5'
-gem 'carrierwave-aws', '~> 1.4'
-gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 
 gem 'rails', '~> 6.0.0.rc2'
 # Use postgresql as the database for Active Record
@@ -67,4 +55,22 @@ gem 'jack_view_tool', git: 'https://github.com/VanBawi/jack_view_tool_ruby_gem'
 
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 
-
+gem "loofah", ">= 2.3.1"
+gem 'friendly_id', '~> 5.2.4'
+gem 'pry-byebug'
+gem 'bootstrap', '~> 4.3.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+gem 'jquery-turbolinks', '~> 2.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'acts_as_list'
+gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'mini_magick', '~> 4.9', '>= 4.9.5'
+gem 'carrierwave-aws', '~> 1.4'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'coffee-rails', '~> 5.0'
+gem 'coffee-script', '~> 2.4', '>= 2.4.1'
+gem 'html5sortable-rails'
+gem 'cocoon', '~> 1.2', '>= 1.2.14'
+gem 'gritter', '~> 1.2'

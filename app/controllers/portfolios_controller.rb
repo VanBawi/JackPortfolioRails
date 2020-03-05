@@ -9,11 +9,11 @@ class PortfoliosController < ApplicationController
     end
 
     def sort
-      params[:portfolio].each_with_index do |id, index|
-        Portfolio.where(id: id).update_all(position: index + 1)
+      params[:order].each do |key, value|
+        Portfolio.find(value[:id]).update(position: value[:position])
       end
-
-      head :ok
+  
+      render nothing: true
     end
 
     def angular
@@ -23,10 +23,11 @@ class PortfoliosController < ApplicationController
 
     def new
         @portfolio_item = Portfolio.new
-        3.times { @portfolio_item.technologies.build}
+        # 3.times { @portfolio_item.technologies.build}
     end
 
     def create
+      # byebug
         @portfolio_item = Portfolio.new(portfolio_params)
         respond_to do |format|
             if @portfolio_item.save
@@ -77,7 +78,7 @@ class PortfoliosController < ApplicationController
                                         :body,
                                         :main_image,
                                         :thumb_image,
-                                        technologies_attributes: [:name])
+                                        technologies_attributes: [:id, :name, :_destroy])
     end
 
     def set_portfolio_item
