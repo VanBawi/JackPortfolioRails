@@ -8,12 +8,12 @@ environment.plugins.prepend('Provide',
     jQuery: 'jquery/src/jquery'
   })
 )
-const aliasConfig = {
-  'jquery': 'jquery-ui-dist/external/jquery/jquery.js',
-  'jquery-ui': 'jquery-ui-dist/jquery-ui.js'
-};
+// const aliasConfig = {
+//   'jquery': 'jquery-ui-dist/external/jquery/jquery.js',
+//   'jquery-ui': 'jquery-ui-dist/jquery-ui.js'
+// };
 
-environment.config.set('resolve.alias', aliasConfig);
+// environment.config.set('resolve.alias', aliasConfig);
 environment.loaders.prepend('coffee', coffee)
 module.exports = environment
 

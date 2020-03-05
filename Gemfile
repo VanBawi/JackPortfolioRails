@@ -73,4 +73,4 @@ gem 'coffee-rails', '~> 5.0'
 gem 'coffee-script', '~> 2.4', '>= 2.4.1'
 gem 'html5sortable-rails'
 gem 'cocoon', '~> 1.2', '>= 1.2.14'
-
+gem 'gritter', '~> 1.2'

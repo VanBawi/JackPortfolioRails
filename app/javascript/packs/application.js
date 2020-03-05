@@ -38,6 +38,7 @@ window.$ = $;
 //= require jquery-ui/widgets/draggable
 //= require jquery-ui/widgets/sortable
 //= require cocoon
+//= require gritter
 //= require tether
 //= require turbolinks
 //= require_tree .
