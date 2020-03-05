@@ -1,8 +1,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-7">
+        <div class="main_image_size">
             <%= image_tag @portfolio_item.main_image.url, width: '100%' %> 
              <%# <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %> 
+        </div>
         </div>
         <div class="col-md-5">
             <h1><%= @portfolio_item.title %></h1>
