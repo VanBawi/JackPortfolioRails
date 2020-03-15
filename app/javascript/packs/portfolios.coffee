@@ -1,7 +1,7 @@
-ready =undefined
+# ready =undefined
 
-ready = ->
-$('.sortable').sortable()
-return
+# ready = ->
+# $('#sortable').sortable()
+# return
 
-$(document).ready ready
+# $(document).ready ready
