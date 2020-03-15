@@ -1,10 +1,15 @@
 <div class="col-sm-8 blog-main">
   <h2> <%= @blog.title %></h2>
-    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in? (:site_admin) %>
   <p>
-    <%= @blog.body %>
+    <%= @blog.body %> <br>
+    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)%> /
+     <%= link_to 'Delete', blog_path(@blog), method: :delete,  data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
   </p>
 
+  <%= render 'comments/comment_form'%>
+  <div id="comments" data-blog-id="<%= @blog.id%>">
+    <%= render @blog.comments %>
+  </div>
 </div>
 
  
